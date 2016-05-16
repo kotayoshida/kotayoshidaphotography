@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kota Yoshida Photography</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin Sans" rel="stylesheet">
+</head>
+
+<body class="top">
+
+  <div>
+    <img class="main" src="images/images/kota_logo_1_03.png" alt="">
+  </div>
+  <nav>
+    <li><a class="lit-btn" href="portrait.html">Portrait</a></li>
+    <li><a class="lit-btn" href="travel.html">Travel</a></li>
+    <li><a class="lit-btn" href="landscape.html">Landscape</a></li>
+    <li><a class="lit-btn" href="life.html">Life</a></li>
+<!--    <li><a class="lit-btn" href="editorial.html">Editorial</a></li>-->
+    <li><a class="lit-btn" href="about.html">About</a></li>
+    <Li><a class="lit-btn" href="contact.html">Contact</a></Li>
+  </nav>
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+  <script>
+    $.backstretch([
+    "images/top1.jpg",
+    "images/top5.jpg",
+    "images/top6.jpg",
+    "images/top4.jpg"
+], {
+      duration: 5000,
+      fade: 1200
+    });
+  </script>
+</body>
+
+</html>

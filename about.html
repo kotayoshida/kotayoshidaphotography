@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+  <script type="text/javascript">
+//    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    if(!navigator.userAgent.match(/(iPhone|android)/)){
+    $(function () {
+      //コンテンツの横サイズ
+      var cont = $('#contents');
+      var contW = $('.section').outerWidth(true) * $('div', cont).length;
+      cont.css('width', contW);
+      //スクロールスピード
+      var speed = 50;
+      //マウスホイールで横移動
+      $('html').mousewheel(function (event, mov) {
+        //ie firefox
+        $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+        //webkit
+        $('.contents').scrollLeft($('.contents').scrollLeft() - mov * speed);
+        return false; //縦スクロール不可
+      });
+    });
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="nav-second">
+    <li><a class="lit-btnn" href="portrait.html">Portrait</a></li>
+    <li><a class="lit-btnn" href="travel.html">Travel</a></li>
+    <li><a class="lit-btnn" href="landscape.html">Landscape</a></li>
+    <li><a class="lit-btnn" href="life.html">Life</a></li>
+<!--    <li><a class="lit-btnn" href="editorial.html">Editorial</a></li>-->
+    <li><a class="lit-btnn" href="about.html">About</a></li>
+    <Li><a class="lit-btnn" href="contact.html">Contact</a></Li>
+     <Li><a class="lit-btnn" href="index.html">Top</a></Li>
+  </nav>
+  
+  <div class="col-english">
+    <div class="p-about">
+      <h2>Kota Yoshida</h2>
+      <br> Born in 1977, Sado Island, Niigata, Japan. Live in Tottori, Japan.
+      <br><br>
+      <h2>Education</h2> 2013/04- B.A. the department of Regional Education, Tottori University, Japan
+      <br>
+      <br>
+      <h2>Exhibition</h2> 2013/11&nbsp;&nbsp;&nbsp;“ wind ” Exhibition of Three Tottori University Students, Art Festa
+      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in Gozoen Building @Gozoen Building 2nd Gallery
+      <br> 2014/02&nbsp;&nbsp;&nbsp;“ Village of Fishermans ” ONAEBA vol.14 Yokohama
+      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Pacifico Yokohama, Yokohama, Kanagawa, Japan
+      <br> 2014/08 &nbsp;  “ The Wind Blowing in There ” Art Event Shimane 2014
+      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Museum Takeshitaseika Factory, Ooda, Shimane, Japan
+      <br> 2014/09&nbsp;&nbsp;&nbsp;“ The Wind Blowing in There ” Photo Exhibition of Never Seeing
+      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Brilllia SHORT SHORTS THEATER, Yokohama, Kanagawa, Japan
+      <br> 2014/11&nbsp;&nbsp;&nbsp;“ The Wind Blowing in There ”
+      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Ryogoku City Core, Tokyo, Japan
+      <br> 2014/12&nbsp;&nbsp;&nbsp;“ Yosakoi ” Nigiwai Art Festival
+      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Gozoen Building, Tottori, Japan
+      <br> 2015/05&nbsp;&nbsp;&nbsp;“I’m being here now.” Kosaten vol.7
+      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Gallery SORA, Tottori, Japan
+      <br>
+    </div>
+  </div>
+
+  <div class="col-japanese">
+    <div class="p-about">
+      <h2>吉田航太</h2>
+      <br> 1994年、新潟県佐渡島生まれ。2009年より写真を始める。
+      <br><br>
+       <h2>Education</h2> 2013年4月鳥取大学に入学。現在、鳥取大学地域学部地域教育学科に在学中。
+      <br><br>
+      <h2>Exhibition</h2> 2013/11&nbsp;&nbsp;&nbsp;”風” Art&Music Festa in 五臓圓ビル 鳥取大学生3人展
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@鳥取県 鳥取市 五臓圓ビル 2F ギャラリーONAEBA
+
+      <br>2014/02&nbsp;&nbsp;&nbsp;”漁師むら” 御苗場 vol.14 横浜
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@神奈川県 横浜市 パシフィコ横浜アネックスホール
+
+      <br> 2014/08&nbsp;&nbsp;&nbsp;”そこに吹く風” アートイベント島根 2014
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@島根県大田市 ミュージアム竹下成果工場
+
+      <br> 2014/09&nbsp;&nbsp;&nbsp;“そこに吹く風” 観てはいけない写真展
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@神奈川県 横浜市 Brilllia SHORT SHORTS THEATER
+
+      <br> 2014/11&nbsp;&nbsp;&nbsp;”そこに吹く風”
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@東京都 墨田区 両国シティコア 11Fエントランス
+
+      <br>2014/12&nbsp;&nbsp;&nbsp;”よさこい” にぎわい芸術祭
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@鳥取県 鳥取市 五臓圓ビル
+
+      <br> 2015/05&nbsp;&nbsp;&nbsp;”今、ここにいて” 交差展vol.7
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@鳥取県 鳥取市 ギャラリーそら
+    </div>
+  </div>
+
+  <script type="text/javascript">
+//    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    if(!navigator.userAgent.match(/(iPhone|android)/)){
+    history.pushState(null, null, null);
+
+    window.addEventListener("popstate", function () {
+      history.pushState(null, null, null);
+    });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="CSS/style.css">
+   <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+  <script type="text/javascript">
+//    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    if(!navigator.userAgent.match(/(iPhone|android)/)){
+    $(function () {
+      //コンテンツの横サイズ
+      var cont = $('#contents');
+      var contW = $('.section').outerWidth(true) * $('div', cont).length;
+      cont.css('width', contW);
+      //スクロールスピード
+      var speed = 50;
+      //マウスホイールで横移動
+      $('html').mousewheel(function (event, mov) {
+        //ie firefox
+        $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+        //webkit
+        $('.contents').scrollLeft($('.contents').scrollLeft() - mov * speed);
+        return false; //縦スクロール不可
+      });
+    });
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="nav-second">
+    <li><a class="lit-btnn" href="portrait.html">Portrait</a></li>
+    <li><a class="lit-btnn" href="travel.html">Travel</a></li>
+    <li><a class="lit-btnn" href="landscape.html">Landscape</a></li>
+    <li><a class="lit-btnn" href="life.html">Life</a></li>
+<!--    <li><a class="lit-btnn" href="editorial.html">Editorial</a></li>-->
+    <li><a class="lit-btnn" href="about.html">About</a></li>
+    <Li><a class="lit-btnn" href="contact.html">Contact</a></Li>
+     <Li><a class="lit-btnn" href="index.html">Top</a></Li>
+  </nav>
+
+ <div class="col-english">
+    <div class="p-about">
+      <h2>Kota Yoshida</h2><br>
+      E-mail  -  kouta.yoshida.one.piece@gmail.com <br><br>
+      
+      <a href="https://www.facebook.com/kota0924">Facebook</a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+//    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    history.pushState(null, null, null);
+
+    window.addEventListener("popstate", function () {
+      history.pushState(null, null, null);
+    });
+  </script>
+</body>
+
+</html>

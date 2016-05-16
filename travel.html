@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+  <script type="text/javascript">
+    //    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    if (!navigator.userAgent.match(/(iPhone|android)/)) {
+      $(function () {
+        //コンテンツの横サイズ
+        var cont = $('#contents');
+        var contW = $('.section').outerWidth(true) * $('div', cont).length;
+        cont.css('width', contW);
+        //スクロールスピード
+        var speed = 50;
+        //マウスホイールで横移動
+        $('html').mousewheel(function (event, mov) {
+          //ie firefox
+          $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+          //webkit
+          $('.contents').scrollLeft($('.contents').scrollLeft() - mov * speed);
+          return false; //縦スクロール不可
+        });
+      });
+    }
+  </script>
+</head>
+
+<body>
+
+  <nav class="nav-second">
+    <li><a class="lit-btnn" href="portrait.html">Portrait</a></li>
+    <li><a class="lit-btnn" href="travel.html">Travel</a></li>
+    <li><a class="lit-btnn" href="landscape.html">Landscape</a></li>
+    <li><a class="lit-btnn" href="life.html">Life</a></li>
+    <!--    <li><a class="lit-btnn" href="editorial.html">Editorial</a></li>-->
+    <li><a class="lit-btnn" href="about.html">About</a></li>
+    <Li><a class="lit-btnn" href="contact.html">Contact</a></Li>
+    <Li><a class="lit-btnn" href="index.html">Top</a></Li>
+  </nav>
+
+  <div id="contents">
+    <div class="contents">
+      <div id="#s01" class="section">
+        <img class=second src="images/travel/1.jpg" alt="">
+      </div>
+      <div id="#s02" class="section">
+        <img class=second src="images/travel/2.jpg" alt="">
+      </div>
+      <div id="#s04" class="section">
+        <img class=second src="images/travel/3.jpg" alt="">
+      </div>
+      <div id="#s05" class="section">
+        <img class=second src="images/travel/4.jpg" alt="">
+      </div>
+      <div id="#s06" class="section">
+        <img class=second src="images/travel/5.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/6.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/7.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/8.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/9.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/10.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/11.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/12.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/13.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/14.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/15.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/16.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/17.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/18.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/19.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/20.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/21.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/22.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/23.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/24.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/25.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/26.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/27.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/28.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/29.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/30.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/31.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/32.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/33.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/34.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/35.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/36.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/37.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/38.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/39.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/40.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/41.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/42.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/43.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/44.jpg" alt="">
+      </div>
+      <div id="#s07" class="section">
+        <img class=second src="images/travel/45.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript">
+    //    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    if (!navigator.userAgent.match(/(iPhone|android)/)) {
+      history.pushState(null, null, null);
+
+      window.addEventListener("popstate", function () {
+        history.pushState(null, null, null);
+      });
+    }
+  </script>
+</body>
+
+</html>
