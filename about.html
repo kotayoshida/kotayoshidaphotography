@@ -10,45 +10,49 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
   <script type="text/javascript">
-//    if(!navigator.userAgent.match(/(iPhone|android|)/)){
-    if(!navigator.userAgent.match(/(iPhone|android)/)){
-    $(function () {
-      //コンテンツの横サイズ
-      var cont = $('#contents');
-      var contW = $('.section').outerWidth(true) * $('div', cont).length;
-      cont.css('width', contW);
-      //スクロールスピード
-      var speed = 50;
-      //マウスホイールで横移動
-      $('html').mousewheel(function (event, mov) {
-        //ie firefox
-        $(this).scrollLeft($(this).scrollLeft() - mov * speed);
-        //webkit
-        $('.contents').scrollLeft($('.contents').scrollLeft() - mov * speed);
-        return false; //縦スクロール不可
+    //    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    if (!navigator.userAgent.match(/(iPhone|android)/)) {
+      $(function () {
+        //コンテンツの横サイズ
+        var cont = $('#contents');
+        var contW = $('.section').outerWidth(true) * $('div', cont).length;
+        cont.css('width', contW);
+        //スクロールスピード
+        var speed = 50;
+        //マウスホイールで横移動
+        $('html').mousewheel(function (event, mov) {
+          //ie firefox
+          $(this).scrollLeft($(this).scrollLeft() - mov * speed);
+          //webkit
+          $('.contents').scrollLeft($('.contents').scrollLeft() - mov * speed);
+          return false; //縦スクロール不可
+        });
       });
-    });
     }
   </script>
 </head>
 
 <body>
   <nav class="nav-second">
-    <li><a class="lit-btnn" href="portrait.html">Portrait</a></li>
-    <li><a class="lit-btnn" href="travel.html">Travel</a></li>
-    <li><a class="lit-btnn" href="landscape.html">Landscape</a></li>
-    <li><a class="lit-btnn" href="life.html">Life</a></li>
-<!--    <li><a class="lit-btnn" href="editorial.html">Editorial</a></li>-->
-    <li><a class="lit-btnn" href="about.html">About</a></li>
-    <Li><a class="lit-btnn" href="contact.html">Contact</a></Li>
-     <Li><a class="lit-btnn" href="index.html">Top</a></Li>
+    <li><a class="lit-btnn" href="portrait.html">PORTRAIT</a></li>
+    <li><a class="lit-btnn" href="travel.html">TRAVEL</a></li>
+    <li><a class="lit-btnn" href="landscape.html">LANDSCAPE</a></li>
+    <li><a class="lit-btnn" href="life.html">LIFE</a></li>
+    <li><a class="lit-btnn" href="about.html">ABOUT</a></li>
+    <Li><a class="lit-btnn" href="contact.html">CONTACT</a></Li>
+    <Li><a class="lit-btnn" href="index.html">TOP</a></Li>
   </nav>
-  
+
+  <div class="col-profile">
+    <img class="profile" src="/images/profile.jpg" alt="">
+  </div>
+
   <div class="col-english">
     <div class="p-about">
       <h2>Kota Yoshida</h2>
-      <br> Born in 1977, Sado Island, Niigata, Japan. Live in Tottori, Japan.
-      <br><br>
+      <br> Born in 1994, Sado Island, Niigata, Japan. Live in Tottori, Japan.
+      <br>
+      <br>
       <h2>Education</h2> 2013/04- B.A. the department of Regional Education, Tottori University, Japan
       <br>
       <br>
@@ -56,7 +60,7 @@
       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in Gozoen Building @Gozoen Building 2nd Gallery
       <br> 2014/02&nbsp;&nbsp;&nbsp;“ Village of Fishermans ” ONAEBA vol.14 Yokohama
       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Pacifico Yokohama, Yokohama, Kanagawa, Japan
-      <br> 2014/08 &nbsp;  “ The Wind Blowing in There ” Art Event Shimane 2014
+      <br> 2014/08 &nbsp; “ The Wind Blowing in There ” Art Event Shimane 2014
       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Museum Takeshitaseika Factory, Ooda, Shimane, Japan
       <br> 2014/09&nbsp;&nbsp;&nbsp;“ The Wind Blowing in There ” Photo Exhibition of Never Seeing
       <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Brilllia SHORT SHORTS THEATER, Yokohama, Kanagawa, Japan
@@ -74,9 +78,11 @@
     <div class="p-about">
       <h2>吉田航太</h2>
       <br> 1994年、新潟県佐渡島生まれ。2009年より写真を始める。
-      <br><br>
-       <h2>Education</h2> 2013年4月鳥取大学に入学。現在、鳥取大学地域学部地域教育学科に在学中。
-      <br><br>
+      <br>
+      <br>
+      <h2>Education</h2> 2013年4月鳥取大学に入学。現在、鳥取大学地域学部地域教育学科に在学中。
+      <br>
+      <br>
       <h2>Exhibition</h2> 2013/11&nbsp;&nbsp;&nbsp;”風” Art&Music Festa in 五臓圓ビル 鳥取大学生3人展
       <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@鳥取県 鳥取市 五臓圓ビル 2F ギャラリーONAEBA
 
@@ -101,13 +107,13 @@
   </div>
 
   <script type="text/javascript">
-//    if(!navigator.userAgent.match(/(iPhone|android|)/)){
-    if(!navigator.userAgent.match(/(iPhone|android)/)){
-    history.pushState(null, null, null);
-
-    window.addEventListener("popstate", function () {
+    //    if(!navigator.userAgent.match(/(iPhone|android|)/)){
+    if (!navigator.userAgent.match(/(iPhone|android)/)) {
       history.pushState(null, null, null);
-    });
+
+      window.addEventListener("popstate", function () {
+        history.pushState(null, null, null);
+      });
     }
   </script>
 </body>
