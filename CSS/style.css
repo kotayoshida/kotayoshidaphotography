@@ -12,6 +12,7 @@
   margin-top: 5px;
 }
 
+
 /*
 .copy{
   font-size: 11px;
@@ -30,8 +31,8 @@ a {
 .lit-btn {
   font-family: 'Josefin Sans';
   letter-spacing: 2.5px;
-  padding: 13px 24px;
-  margin: 10px;
+  padding: 15px 15px;
+  margin: 5px;
   margin-top: 20px;
   font-size: 11px;
   position: relative;
@@ -84,14 +85,14 @@ a {
 }
 
 .lit-btnn {
-  padding: 10px 20px;
+  padding: 20px 30px;
   font-family: 'Josefin Sans';
-  font-size: 11px;
+  font-size: 12px;
   color: #004b6b;
   letter-spacing: 2.5px;
   text-decoration: none;
   transition: 0.7s;
-  margin: 10px;
+/*  margin: 10px;*/
 }
 
 .lit-btnn:hover {
@@ -99,7 +100,7 @@ a {
   color: #fff;
 }
 
-nav {
+.nav-top {
   margin: 20px;
   float: left;
 }
@@ -108,14 +109,22 @@ nav {
   width: 30px;
   float: left;
   padding-top: 19px;
-  margin: 5px;
+  margin: 3px;
   opacity: 0.7;
+}
+
+.second-menu{
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .nav-second {
   position: fixed;
-  /*  margin: 10px 0;*/
   float: left;
+  max-width: 1000px;
+padding: 20px;
+  margin: 0 auto;
+/*  list-style-type: none;*/
 }
 
 nav li {
@@ -131,6 +140,10 @@ nav li {
   padding-top: 80px;
 }
 
+.top-menu{
+  max-width: 1500px;
+  margin: 0 auto;
+}
 
 /*about*/
 
@@ -145,6 +158,11 @@ nav li {
   height: 100%;
 }
 
+.profile-all{
+  width: 1600px;
+  margin: 0 auto;
+  float: left;
+}
 
 /*
 #a{
@@ -172,8 +190,8 @@ h2 {
   font-size: 12px;
   float: left;
   width: 500px;
-  margin-right: 30px;
-  margin-left: 50px;
+  padding-right: 30px;
+  padding-left: 50px;
   padding-top: 110px;
 }
 
@@ -181,7 +199,7 @@ h2 {
   font-size: 12px;
   float: left;
   width: 500px;
-  margin-left: 10px;
+  padding-left: 10px;
   padding-top: 110px;
 }
 
@@ -244,5 +262,23 @@ h2 {
     float: left;
     margin: 0 auto;
     padding-top: 25px;
+  }
+  .profile {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .col-english {
+    font-size: 9px;
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .col-japanese {
+    font-size: 9px;
+    float: left;
+    width: 100%;
+    padding-top: 50px;
   }
 }
