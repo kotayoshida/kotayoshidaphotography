@@ -5,7 +5,7 @@
 
 .main {
   width: 200px;
-/*  float: left;*/
+  /*  float: left;*/
   padding: 30px;
   margin-left: 30px;
   margin-right: 50px;
@@ -22,6 +22,7 @@ color: #fff;
   letter-spacing: 1px;
 }
 */
+
 
 /*
 .top{
@@ -44,7 +45,7 @@ a {
   position: relative;
   display: inline-block;
   color: #fff;
-/*  text-align: center;*/
+  /*  text-align: center;*/
   text-decoration: none;
   outline: none;
   overflow: hidden;
@@ -90,11 +91,8 @@ a {
   transition: all 2s;
 }
 
-
-
-
 .lit-btnn {
-/*
+  /*
   padding: 10px 20px;
   font-family: 'Quicksand', sans-serif;
   font-size: 11px;
@@ -103,46 +101,56 @@ a {
   text-decoration: none;
   transition: 1.2s;
 */
-position: relative;
-	display: inline-block;
-	padding: 10px 20px;
-/*	border: 1px solid #004b6b;*/
-	color: #004b6b;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	overflow: hidden;
+  padding: 5px 5px;
+  font-family: -apple-system, Sans-Serif;
+  font-size: 10px;
+  color: #004b6b;
+  text-decoration: none;
+  transition: 0.7s;
+  float: left;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  /*	border: 1px solid #004b6b;*/
+  color: #004b6b;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
   font-size: 11px;
   letter-spacing: 2px;
   font-family: 'Quicksand', sans-serif;
   margin: 0 auto;
 }
+
 .lit-btnn:hover::before {
   transition: all 2s ease;
 }
 
 .lit-btnn::after {
-	position: absolute;
-	bottom: 100%;
-	left: 0;
-	z-index: 2;
-	display: block;
-	content: attr(data-hover);
-	width: 100%;
-	height: 100%;
-	padding: 10px 20px;
-	background-color: #004b6b;
-	color: #fff;
-	opacity: 0;
-	transition: all 0.8s ease;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 2;
+  display: block;
+  content: attr(data-hover);
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: #004b6b;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.8s ease;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .lit-btnn:hover::after {
-	bottom: 0;
-	opacity: 1;
+  bottom: 0;
+  opacity: 1;
 }
+
 
 /*
 .lit-btnn:hover {
@@ -150,43 +158,45 @@ position: relative;
   color: #fff;
 }
 */
-.main{
+
+.main {
   float: left;
   position: absolute;
 }
+
 .nav-top {
-/*  float: left;*/
+  /*  float: left;*/
   width: 1200px;
   margin: 0 auto;
 }
-.nav-inner{
+
+.nav-inner {
+  margin: 0 auto;
+  width: 1000px;
+}
+.nav-inner-second {
   margin: 0 auto;
   width: 800px;
 }
-
 .icon {
   width: 30px;
-/*  float: left;*/
+  /*  float: left;*/
   padding-top: 36px;
   margin: 3px;
   opacity: 0.7;
 }
 
-
-
-
-.second-menu{
+.second-menu {
   max-width: 1300px;
   margin: 0 auto;
 }
 
 .nav-second {
-/*  position:fixed;*/
-/*  float: left;*/
-  width: 680px;
+  position: fixed;
+  float: left;
+  width: 1200px;
   margin: 0 auto;
-  
-/*  list-style-type: none;*/
+  /*  list-style-type: none;*/
 }
 
 nav li {
@@ -200,13 +210,14 @@ nav li {
   margin: 0 auto;
   margin-right: 25px;
   top: 50%;
-text-align: center;
+  text-align: center;
 }
 
-#contents{
+#contents {
   margin: 0 auto;
   padding: 5% 0;
 }
+
 
 /*about*/
 
@@ -216,13 +227,12 @@ text-align: center;
   color: #555;
 }
 
-
-
-.profile-all{
+.profile-all {
   width: 1600px;
   margin: 0 auto;
   float: left;
 }
+
 
 /*
 #a{
@@ -283,6 +293,17 @@ h2 {
     margin-top: 5px;
     position: fixed;
   }
+/*
+  .main-second {
+    width: 200px;
+    float: left;
+    padding: 30px 5px;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-top: 5px;
+    position: fixed;
+  }
+*/
   nav li {
     margin: 20px;
     padding: 10px;
@@ -290,10 +311,6 @@ h2 {
     height: 10px;
     padding-top: 5px;
     margin-top: 20px;
-  }
-  .nav-second {
-    float: left;
-    position: static;
   }
   .lit-btn {
     padding: 5px 10px;
@@ -306,6 +323,7 @@ h2 {
     padding: 10px;
     width: 70px;
   }
+  /*
   .lit-btnn {
     padding: 5px 5px;
     font-family: -apple-system, Sans-Serif;
@@ -316,6 +334,7 @@ h2 {
     float: left;
     margin: 0;
   }
+*/
   .second {
     width: 100%;
     height: auto;
